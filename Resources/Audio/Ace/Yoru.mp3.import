@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Yoru.mp3-f0319eba1ae61909065a349599c8f0c7.mp3str"
+
+[deps]
+
+source_file="res://Resources/Audio/Ace/Yoru.mp3"
+dest_files=[ "res://.import/Yoru.mp3-f0319eba1ae61909065a349599c8f0c7.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

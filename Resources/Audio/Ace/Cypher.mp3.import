@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Cypher.mp3-26c974aabd2f14995182296ca7675a87.mp3str"
+
+[deps]
+
+source_file="res://Resources/Audio/Ace/Cypher.mp3"
+dest_files=[ "res://.import/Cypher.mp3-26c974aabd2f14995182296ca7675a87.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Astra.mp3-c405215b271d7853ed1f6f948f56689c.mp3str"
+
+[deps]
+
+source_file="res://Resources/Audio/Ace/Astra.mp3"
+dest_files=[ "res://.import/Astra.mp3-c405215b271d7853ed1f6f948f56689c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

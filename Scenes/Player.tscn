@@ -1,0 +1,628 @@
+[gd_scene load_steps=52 format=2]
+
+[ext_resource path="res://Resources/Img/Hud/Gun.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
+[ext_resource path="res://Resources/Img/Hud/ACE.png" type="Texture" id=3]
+[ext_resource path="res://Resources/Audio/Kills/primera_kill.mp3" type="AudioStream" id=4]
+[ext_resource path="res://Resources/Audio/Kills/quinta_kill.mp3" type="AudioStream" id=5]
+[ext_resource path="res://Resources/Audio/Kills/segunda_kill.mp3" type="AudioStream" id=6]
+[ext_resource path="res://Resources/Audio/Kills/tercera_kill.mp3" type="AudioStream" id=7]
+[ext_resource path="res://Resources/Audio/Kills/cuarta_kill.mp3" type="AudioStream" id=8]
+[ext_resource path="res://Scenes/Menu.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Resources/Audio/Ace/Reyna.mp3" type="AudioStream" id=10]
+[ext_resource path="res://Resources/Audio/Ace/Sage.mp3" type="AudioStream" id=11]
+[ext_resource path="res://Resources/Audio/Ace/Skye.mp3" type="AudioStream" id=12]
+[ext_resource path="res://Resources/Audio/Ace/Sova.mp3" type="AudioStream" id=13]
+[ext_resource path="res://Resources/Audio/Ace/Viper.mp3" type="AudioStream" id=14]
+[ext_resource path="res://Resources/Audio/Ace/Yoru.mp3" type="AudioStream" id=15]
+[ext_resource path="res://Resources/Audio/Ace/Omen.mp3" type="AudioStream" id=16]
+[ext_resource path="res://Resources/Audio/Ace/Phoenix.mp3" type="AudioStream" id=17]
+[ext_resource path="res://Resources/Audio/Ace/Raze.mp3" type="AudioStream" id=18]
+[ext_resource path="res://Resources/Audio/Ace/Astra.mp3" type="AudioStream" id=19]
+[ext_resource path="res://Resources/Audio/Ace/Brimstone.mp3" type="AudioStream" id=20]
+[ext_resource path="res://Resources/Audio/Ace/Chamber.mp3" type="AudioStream" id=21]
+[ext_resource path="res://Resources/Audio/Ace/Jett.mp3" type="AudioStream" id=22]
+[ext_resource path="res://Resources/Audio/Ace/KAY O.mp3" type="AudioStream" id=23]
+[ext_resource path="res://Resources/Audio/Ace/Neon.mp3" type="AudioStream" id=24]
+[ext_resource path="res://Resources/Audio/Ace/Killjoy.mp3" type="AudioStream" id=25]
+[ext_resource path="res://Resources/Audio/Ace/Breach.mp3" type="AudioStream" id=26]
+[ext_resource path="res://Resources/Audio/Ace/Cypher.mp3" type="AudioStream" id=27]
+[ext_resource path="res://Resources/Theme/Theme.tres" type="Theme" id=28]
+[ext_resource path="res://Resources/Img/Kill/primera_kill.png" type="Texture" id=29]
+[ext_resource path="res://Resources/Img/Kill/cuarta_kill.png" type="Texture" id=30]
+[ext_resource path="res://Resources/Img/Kill/quinta_kill.png" type="Texture" id=31]
+[ext_resource path="res://Resources/Img/Kill/segunda_kill.png" type="Texture" id=32]
+[ext_resource path="res://Resources/Img/Kill/tercera_kill.png" type="Texture" id=33]
+
+[sub_resource type="CapsuleShape" id=1]
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasLayer/Control/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 315, -163 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CanvasLayer/Control/Sprite:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CanvasLayer/Control/Sprite:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Shoot"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasLayer/Control/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 1, 0 ]
+}
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 1 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="Animation" id=7]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "Replay"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.92549 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "Ace"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "Kill"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 512, 512 ), Vector2( 512, 456 ), Vector2( 512, 512 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 512, 512 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "Kill"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 512, 512 ), Vector2( 512, 456 ), Vector2( 512, 512 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 512, 512 ) ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "Kill"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 512, 512 ), Vector2( 512, 456 ), Vector2( 512, 512 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 512, 512 ) ]
+}
+
+[sub_resource type="Animation" id=15]
+resource_name = "Kill"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 512, 512 ), Vector2( 512, 456 ), Vector2( 512, 512 ) ]
+}
+
+[sub_resource type="Animation" id=16]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 512, 512 ) ]
+}
+
+[sub_resource type="Animation" id=17]
+resource_name = "Kill"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 512, 512 ), Vector2( 512, 456 ) ]
+}
+
+[sub_resource type="Animation" id=18]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 512, 512 ) ]
+}
+
+[node name="Player" type="KinematicBody"]
+script = ExtResource( 2 )
+
+[node name="Collision" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="RayCast" type="RayCast" parent="."]
+enabled = true
+cast_to = Vector3( 0, 0, -2000 )
+
+[node name="Camera" type="Camera" parent="."]
+current = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer/Control"]
+position = Vector2( 315, -163 )
+scale = Vector2( 10.2188, 10.2188 )
+texture = ExtResource( 1 )
+hframes = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/Control/Sprite"]
+root_node = NodePath("../../../..")
+anims/RESET = SubResource( 2 )
+anims/Shoot = SubResource( 3 )
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -32.0
+margin_top = -32.0
+rect_scale = Vector2( 2, 2 )
+texture = SubResource( 4 )
+
+[node name="Menu" parent="CanvasLayer" instance=ExtResource( 9 )]
+visible = false
+
+[node name="Replay" type="Label" parent="CanvasLayer"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 184.0
+margin_top = 352.0
+margin_right = 839.0
+margin_bottom = 412.0
+theme = ExtResource( 28 )
+text = "Press ESC to Open the menu"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/Replay"]
+anims/RESET = SubResource( 7 )
+anims/Replay = SubResource( 8 )
+
+[node name="Ace" type="Sprite" parent="CanvasLayer"]
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 512, 120 )
+scale = Vector2( 0.771654, 0.771654 )
+texture = ExtResource( 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/Ace"]
+anims/Ace = SubResource( 5 )
+anims/RESET = SubResource( 6 )
+
+[node name="First" type="Sprite" parent="CanvasLayer"]
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 512, 512 )
+scale = Vector2( 0.188235, 0.188235 )
+texture = ExtResource( 29 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/First"]
+anims/Kill = SubResource( 9 )
+anims/RESET = SubResource( 10 )
+
+[node name="Second" type="Sprite" parent="CanvasLayer"]
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 512, 512 )
+scale = Vector2( 0.188235, 0.188235 )
+texture = ExtResource( 32 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/Second"]
+anims/Kill = SubResource( 11 )
+anims/RESET = SubResource( 12 )
+
+[node name="Third" type="Sprite" parent="CanvasLayer"]
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 512, 512 )
+scale = Vector2( 0.188235, 0.188235 )
+texture = ExtResource( 33 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/Third"]
+anims/Kill = SubResource( 13 )
+anims/RESET = SubResource( 14 )
+
+[node name="Fourth" type="Sprite" parent="CanvasLayer"]
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 512, 512 )
+scale = Vector2( 0.188235, 0.188235 )
+texture = ExtResource( 30 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/Fourth"]
+anims/Kill = SubResource( 15 )
+anims/RESET = SubResource( 16 )
+
+[node name="Fifth" type="Sprite" parent="CanvasLayer"]
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 512, 512 )
+scale = Vector2( 0.188235, 0.188235 )
+texture = ExtResource( 31 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/Fifth"]
+anims/Kill = SubResource( 17 )
+anims/RESET = SubResource( 18 )
+
+[node name="Audios" type="Node" parent="."]
+
+[node name="Ace" type="Node" parent="Audios"]
+
+[node name="Ace1" type="AudioStreamPlayer" parent="Audios/Ace"]
+stream = ExtResource( 4 )
+
+[node name="Ace2" type="AudioStreamPlayer" parent="Audios/Ace"]
+stream = ExtResource( 6 )
+
+[node name="Ace3" type="AudioStreamPlayer" parent="Audios/Ace"]
+stream = ExtResource( 7 )
+
+[node name="Ace4" type="AudioStreamPlayer" parent="Audios/Ace"]
+stream = ExtResource( 8 )
+
+[node name="Ace5" type="AudioStreamPlayer" parent="Audios/Ace"]
+stream = ExtResource( 5 )
+
+[node name="Agents" type="Node" parent="Audios"]
+
+[node name="Astra" type="AudioStreamPlayer" parent="Audios/Agents"]
+stream = ExtResource( 19 )
+
+[node name="Breach" type="AudioStreamPlayer" parent="Audios/Agents"]
+stream = ExtResource( 26 )
+
+[node name="Brimstone" type="AudioStreamPlayer" parent="Audios/Agents"]
+stream = ExtResource( 20 )
+
+[node name="Chamber" type="AudioStreamPlayer" parent="Audios/Agents"]
+stream = ExtResource( 21 )
+
+[node name="Cypher" type="AudioStreamPlayer" parent="Audios/Agents"]
+stream = ExtResource( 27 )
+
+[node name="Jett" type="AudioStreamPlayer" parent="Audios/Agents"]
+stream = ExtResource( 22 )
+
+[node name="Kayo" type="AudioStreamPlayer" parent="Audios/Agents"]
+stream = ExtResource( 23 )
+
+[node name="Killjoy" type="AudioStreamPlayer" parent="Audios/Agents"]
+stream = ExtResource( 25 )
+
+[node name="Neon" type="AudioStreamPlayer" parent="Audios/Agents"]
+stream = ExtResource( 24 )
+
+[node name="Omen" type="AudioStreamPlayer" parent="Audios/Agents"]
+stream = ExtResource( 16 )
+
+[node name="Phoenix" type="AudioStreamPlayer" parent="Audios/Agents"]
+stream = ExtResource( 17 )
+
+[node name="Raze" type="AudioStreamPlayer" parent="Audios/Agents"]
+stream = ExtResource( 18 )
+
+[node name="Reyna" type="AudioStreamPlayer" parent="Audios/Agents"]
+stream = ExtResource( 10 )
+
+[node name="Sage" type="AudioStreamPlayer" parent="Audios/Agents"]
+stream = ExtResource( 11 )
+
+[node name="Skye" type="AudioStreamPlayer" parent="Audios/Agents"]
+stream = ExtResource( 12 )
+
+[node name="Sova" type="AudioStreamPlayer" parent="Audios/Agents"]
+stream = ExtResource( 13 )
+
+[node name="Viper" type="AudioStreamPlayer" parent="Audios/Agents"]
+stream = ExtResource( 14 )
+
+[node name="Yoru" type="AudioStreamPlayer" parent="Audios/Agents"]
+stream = ExtResource( 15 )
+
+[connection signal="mouseCap" from="CanvasLayer/Menu" to="." method="_on_Menu_mouseCap"]

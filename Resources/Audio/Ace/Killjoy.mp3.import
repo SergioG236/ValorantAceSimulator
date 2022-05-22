@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Killjoy.mp3-2de58ebf4ff0daec5160c731d52acccf.mp3str"
+
+[deps]
+
+source_file="res://Resources/Audio/Ace/Killjoy.mp3"
+dest_files=[ "res://.import/Killjoy.mp3-2de58ebf4ff0daec5160c731d52acccf.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

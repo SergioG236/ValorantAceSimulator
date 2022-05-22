@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/primera_kill.mp3-bbd650d5bab54974da6be72d6ba95020.mp3str"
+
+[deps]
+
+source_file="res://Resources/Audio/Kills/primera_kill.mp3"
+dest_files=[ "res://.import/primera_kill.mp3-bbd650d5bab54974da6be72d6ba95020.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

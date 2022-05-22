@@ -1,0 +1,81 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Resources/Fonts/Welbut__.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scenes/Settings.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Resources/Theme/Theme.tres" type="Theme" id=3]
+[ext_resource path="res://Scripts/Menu.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 27
+font_data = ExtResource( 1 )
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 3 )
+script = ExtResource( 4 )
+
+[node name="Options" type="ColorRect" parent="."]
+anchor_left = 0.420898
+anchor_top = 0.321667
+anchor_right = 0.580078
+anchor_bottom = 0.54
+color = Color( 0.192157, 0.192157, 0.192157, 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Continue" type="Button" parent="Options"]
+margin_left = 1.0
+margin_top = 38.0
+margin_right = 164.0
+margin_bottom = 69.0
+custom_fonts/font = SubResource( 1 )
+text = "Continue"
+
+[node name="Settings" type="Button" parent="Options"]
+margin_left = 1.5
+margin_top = 69.0
+margin_right = 164.5
+margin_bottom = 100.0
+custom_fonts/font = SubResource( 1 )
+text = "Settings"
+
+[node name="Exit" type="Button" parent="Options"]
+margin_left = 1.5
+margin_top = 100.0
+margin_right = 164.5
+margin_bottom = 131.0
+custom_fonts/font = SubResource( 1 )
+text = "Exit to Title"
+
+[node name="Title" type="ColorRect" parent="."]
+anchor_left = 0.420898
+anchor_top = 0.321667
+anchor_right = 0.580078
+anchor_bottom = 0.385
+color = Color( 0.152941, 0.152941, 0.152941, 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Title"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 2 )
+text = "Menu"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Settings" parent="." instance=ExtResource( 2 )]
+visible = false
+
+[connection signal="pressed" from="Options/Continue" to="." method="_on_Continue_pressed"]
+[connection signal="pressed" from="Options/Settings" to="." method="_on_Settings_pressed"]
+[connection signal="pressed" from="Options/Exit" to="." method="_on_Exit_pressed"]

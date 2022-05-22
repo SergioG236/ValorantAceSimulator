@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Viper.mp3-bab22514630c2519d3c63525e15aa0e8.mp3str"
+
+[deps]
+
+source_file="res://Resources/Audio/Ace/Viper.mp3"
+dest_files=[ "res://.import/Viper.mp3-bab22514630c2519d3c63525e15aa0e8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

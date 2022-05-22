@@ -1,0 +1,262 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Resources/Img/Enemies/Brimstone.png" type="Texture" id=1]
+[ext_resource path="res://Resources/Img/Characters/Selection.png" type="Texture" id=2]
+[ext_resource path="res://Resources/Img/Enemies/Breach.png" type="Texture" id=3]
+[ext_resource path="res://Resources/Img/Enemies/Chamber.png" type="Texture" id=4]
+[ext_resource path="res://Resources/Img/Enemies/Yoru.png" type="Texture" id=5]
+[ext_resource path="res://Resources/Img/Enemies/Omen.png" type="Texture" id=6]
+[ext_resource path="res://Resources/Img/Enemies/Astra.png" type="Texture" id=7]
+[ext_resource path="res://Resources/Img/Enemies/Viper.png" type="Texture" id=8]
+[ext_resource path="res://Resources/Img/Enemies/KAY O.png" type="Texture" id=9]
+[ext_resource path="res://Resources/Img/Enemies/Cypher.png" type="Texture" id=10]
+[ext_resource path="res://Resources/Img/Enemies/Jett.png" type="Texture" id=11]
+[ext_resource path="res://Resources/Img/Enemies/Neon.png" type="Texture" id=12]
+[ext_resource path="res://Resources/Img/Enemies/Phoenix.png" type="Texture" id=13]
+[ext_resource path="res://Resources/Img/Enemies/Raze.png" type="Texture" id=14]
+[ext_resource path="res://Resources/Img/Enemies/Reyna.png" type="Texture" id=15]
+[ext_resource path="res://Resources/Img/Enemies/Sova.png" type="Texture" id=16]
+[ext_resource path="res://Resources/Img/Enemies/Sage.png" type="Texture" id=17]
+[ext_resource path="res://Resources/Img/Enemies/Skye.png" type="Texture" id=18]
+[ext_resource path="res://Resources/Img/Enemies/Killjoy.png" type="Texture" id=19]
+[ext_resource path="res://Resources/Img/Characters/Agents.png" type="Texture" id=20]
+[ext_resource path="res://Scripts/AgentSelection.gd" type="Script" id=21]
+[ext_resource path="res://Resources/Img/Hud/Select.png" type="Texture" id=22]
+[ext_resource path="res://Resources/Audio/Misc/agentselect.mp3" type="AudioStream" id=23]
+
+[node name="AgentSelection" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 21 )
+
+[node name="Selection" type="Sprite" parent="."]
+position = Vector2( 513, 299 )
+scale = Vector2( 0.555208, 0.555208 )
+texture = ExtResource( 2 )
+
+[node name="Brimstone" type="TextureButton" parent="Selection"]
+margin_left = -420.127
+margin_top = 347.061
+margin_right = -340.127
+margin_bottom = 427.061
+action_mode = 0
+keep_pressed_outside = true
+texture_normal = ExtResource( 1 )
+expand = true
+
+[node name="Jett" type="TextureButton" parent="Selection"]
+margin_left = -334.275
+margin_top = 345.235
+margin_right = -254.275
+margin_bottom = 425.235
+action_mode = 0
+keep_pressed_outside = true
+texture_normal = ExtResource( 11 )
+expand = true
+
+[node name="Killjoy" type="TextureButton" parent="Selection"]
+margin_left = -250.25
+margin_top = 345.235
+margin_right = -170.25
+margin_bottom = 425.235
+action_mode = 0
+keep_pressed_outside = true
+texture_normal = ExtResource( 19 )
+expand = true
+
+[node name="Neon" type="TextureButton" parent="Selection"]
+margin_left = -166.224
+margin_top = 345.235
+margin_right = -86.2242
+margin_bottom = 425.235
+action_mode = 0
+keep_pressed_outside = true
+texture_normal = ExtResource( 12 )
+expand = true
+
+[node name="Phoenix" type="TextureButton" parent="Selection"]
+margin_left = -82.1988
+margin_top = 345.235
+margin_right = -2.19879
+margin_bottom = 425.235
+action_mode = 0
+keep_pressed_outside = true
+texture_normal = ExtResource( 13 )
+expand = true
+
+[node name="Raze" type="TextureButton" parent="Selection"]
+margin_left = 1.82648
+margin_top = 345.235
+margin_right = 81.8265
+margin_bottom = 425.235
+action_mode = 0
+keep_pressed_outside = true
+texture_normal = ExtResource( 14 )
+expand = true
+
+[node name="Reyna" type="TextureButton" parent="Selection"]
+margin_left = 85.8519
+margin_top = 345.235
+margin_right = 165.852
+margin_bottom = 425.235
+action_mode = 0
+keep_pressed_outside = true
+texture_normal = ExtResource( 15 )
+expand = true
+
+[node name="Sage" type="TextureButton" parent="Selection"]
+margin_left = 169.877
+margin_top = 345.235
+margin_right = 249.877
+margin_bottom = 425.235
+action_mode = 0
+keep_pressed_outside = true
+texture_normal = ExtResource( 17 )
+expand = true
+
+[node name="Skye" type="TextureButton" parent="Selection"]
+margin_left = 253.903
+margin_top = 345.235
+margin_right = 333.903
+margin_bottom = 425.235
+action_mode = 0
+keep_pressed_outside = true
+texture_normal = ExtResource( 18 )
+expand = true
+
+[node name="Sova" type="TextureButton" parent="Selection"]
+margin_left = 337.928
+margin_top = 345.235
+margin_right = 417.928
+margin_bottom = 425.235
+action_mode = 0
+keep_pressed_outside = true
+texture_normal = ExtResource( 16 )
+expand = true
+
+[node name="Viper" type="TextureButton" parent="Selection"]
+margin_left = -418.3
+margin_top = 429.26
+margin_right = -338.3
+margin_bottom = 509.26
+action_mode = 0
+keep_pressed_outside = true
+texture_normal = ExtResource( 8 )
+expand = true
+
+[node name="Astra" type="TextureButton" parent="Selection"]
+margin_left = -334.275
+margin_top = 429.26
+margin_right = -254.275
+margin_bottom = 509.26
+action_mode = 0
+keep_pressed_outside = true
+texture_normal = ExtResource( 7 )
+expand = true
+
+[node name="Breach" type="TextureButton" parent="Selection"]
+margin_left = -250.25
+margin_top = 429.26
+margin_right = -170.25
+margin_bottom = 509.26
+action_mode = 0
+keep_pressed_outside = true
+texture_normal = ExtResource( 3 )
+expand = true
+
+[node name="Chamber" type="TextureButton" parent="Selection"]
+margin_left = -166.224
+margin_top = 429.26
+margin_right = -86.2242
+margin_bottom = 509.26
+action_mode = 0
+keep_pressed_outside = true
+texture_normal = ExtResource( 4 )
+expand = true
+
+[node name="Cypher" type="TextureButton" parent="Selection"]
+margin_left = -82.1988
+margin_top = 429.26
+margin_right = -2.19879
+margin_bottom = 509.26
+action_mode = 0
+keep_pressed_outside = true
+texture_normal = ExtResource( 10 )
+expand = true
+
+[node name="Kayo" type="TextureButton" parent="Selection"]
+margin_left = 85.8519
+margin_top = 429.26
+margin_right = 165.852
+margin_bottom = 509.26
+action_mode = 0
+keep_pressed_outside = true
+texture_normal = ExtResource( 9 )
+expand = true
+
+[node name="Omen" type="TextureButton" parent="Selection"]
+margin_left = 169.877
+margin_top = 429.26
+margin_right = 249.877
+margin_bottom = 509.26
+action_mode = 0
+keep_pressed_outside = true
+texture_normal = ExtResource( 6 )
+expand = true
+
+[node name="Yoru" type="TextureButton" parent="Selection"]
+margin_left = 253.903
+margin_top = 429.26
+margin_right = 333.903
+margin_bottom = 509.26
+action_mode = 0
+keep_pressed_outside = true
+texture_normal = ExtResource( 5 )
+expand = true
+
+[node name="TextureButton" type="TextureButton" parent="Selection"]
+anchor_left = 0.431641
+anchor_top = 0.726667
+anchor_right = 0.563477
+anchor_bottom = 0.786667
+margin_left = -947.482
+margin_top = -541.857
+margin_right = -947.482
+margin_bottom = -541.857
+texture_normal = ExtResource( 22 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Agent" type="Sprite" parent="."]
+visible = false
+position = Vector2( 498, 216 )
+scale = Vector2( 2.43204, 2.43204 )
+texture = ExtResource( 20 )
+hframes = 6
+vframes = 3
+frame = 5
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 23 )
+
+[connection signal="pressed" from="Selection/Brimstone" to="." method="_on_Brimstone_pressed"]
+[connection signal="pressed" from="Selection/Jett" to="." method="_on_Jett_pressed"]
+[connection signal="pressed" from="Selection/Killjoy" to="." method="_on_Killjoy_pressed"]
+[connection signal="pressed" from="Selection/Neon" to="." method="_on_Neon_pressed"]
+[connection signal="pressed" from="Selection/Phoenix" to="." method="_on_Phoenix_pressed"]
+[connection signal="pressed" from="Selection/Raze" to="." method="_on_Raze_pressed"]
+[connection signal="pressed" from="Selection/Reyna" to="." method="_on_Reyna_pressed"]
+[connection signal="pressed" from="Selection/Sage" to="." method="_on_Sage_pressed"]
+[connection signal="pressed" from="Selection/Skye" to="." method="_on_Skye_pressed"]
+[connection signal="pressed" from="Selection/Sova" to="." method="_on_Sova_pressed"]
+[connection signal="pressed" from="Selection/Viper" to="." method="_on_Viper_pressed"]
+[connection signal="pressed" from="Selection/Astra" to="." method="_on_Astra_pressed"]
+[connection signal="pressed" from="Selection/Breach" to="." method="_on_Breach_pressed"]
+[connection signal="pressed" from="Selection/Chamber" to="." method="_on_Chamber_pressed"]
+[connection signal="pressed" from="Selection/Cypher" to="." method="_on_Cypher_pressed"]
+[connection signal="pressed" from="Selection/Kayo" to="." method="_on_Kayo_pressed"]
+[connection signal="pressed" from="Selection/Omen" to="." method="_on_Omen_pressed"]
+[connection signal="pressed" from="Selection/Yoru" to="." method="_on_Yoru_pressed"]
+[connection signal="pressed" from="Selection/TextureButton" to="." method="_on_TextureButton_pressed"]

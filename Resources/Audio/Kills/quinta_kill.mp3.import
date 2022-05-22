@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/quinta_kill.mp3-474b0d1d117ab4d7714c0ccf1c69c1d8.mp3str"
+
+[deps]
+
+source_file="res://Resources/Audio/Kills/quinta_kill.mp3"
+dest_files=[ "res://.import/quinta_kill.mp3-474b0d1d117ab4d7714c0ccf1c69c1d8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
