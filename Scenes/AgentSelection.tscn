@@ -1,245 +1,230 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=24 format=3 uid="uid://bbc1xvf53vo43"]
 
-[ext_resource path="res://Resources/Img/Enemies/Brimstone.png" type="Texture" id=1]
-[ext_resource path="res://Resources/Img/Characters/Selection.png" type="Texture" id=2]
-[ext_resource path="res://Resources/Img/Enemies/Breach.png" type="Texture" id=3]
-[ext_resource path="res://Resources/Img/Enemies/Chamber.png" type="Texture" id=4]
-[ext_resource path="res://Resources/Img/Enemies/Yoru.png" type="Texture" id=5]
-[ext_resource path="res://Resources/Img/Enemies/Omen.png" type="Texture" id=6]
-[ext_resource path="res://Resources/Img/Enemies/Astra.png" type="Texture" id=7]
-[ext_resource path="res://Resources/Img/Enemies/Viper.png" type="Texture" id=8]
-[ext_resource path="res://Resources/Img/Enemies/KAY O.png" type="Texture" id=9]
-[ext_resource path="res://Resources/Img/Enemies/Cypher.png" type="Texture" id=10]
-[ext_resource path="res://Resources/Img/Enemies/Jett.png" type="Texture" id=11]
-[ext_resource path="res://Resources/Img/Enemies/Neon.png" type="Texture" id=12]
-[ext_resource path="res://Resources/Img/Enemies/Phoenix.png" type="Texture" id=13]
-[ext_resource path="res://Resources/Img/Enemies/Raze.png" type="Texture" id=14]
-[ext_resource path="res://Resources/Img/Enemies/Reyna.png" type="Texture" id=15]
-[ext_resource path="res://Resources/Img/Enemies/Sova.png" type="Texture" id=16]
-[ext_resource path="res://Resources/Img/Enemies/Sage.png" type="Texture" id=17]
-[ext_resource path="res://Resources/Img/Enemies/Skye.png" type="Texture" id=18]
-[ext_resource path="res://Resources/Img/Enemies/Killjoy.png" type="Texture" id=19]
-[ext_resource path="res://Resources/Img/Characters/Agents.png" type="Texture" id=20]
-[ext_resource path="res://Scripts/AgentSelection.gd" type="Script" id=21]
-[ext_resource path="res://Resources/Img/Hud/Select.png" type="Texture" id=22]
-[ext_resource path="res://Resources/Audio/Misc/agentselect.mp3" type="AudioStream" id=23]
+[ext_resource type="Texture2D" uid="uid://cxo2s5ek4on13" path="res://Resources/Img/Enemies/Brimstone.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://dj6l8a5ln81au" path="res://Resources/Img/Characters/Selection.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dauwsij2eh1n" path="res://Resources/Img/Enemies/Breach.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://btieju5qynknw" path="res://Resources/Img/Enemies/Chamber.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://ek3bevx4lvas" path="res://Resources/Img/Enemies/Yoru.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://du7an5dpnvk4p" path="res://Resources/Img/Enemies/Omen.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://car4viu4hx2m7" path="res://Resources/Img/Enemies/Astra.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://ccvuyqhdowd7u" path="res://Resources/Img/Enemies/Viper.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://dxjbldgc6umh2" path="res://Resources/Img/Enemies/KAY O.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://bahp30hilltyy" path="res://Resources/Img/Enemies/Cypher.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://phud5uymwn0u" path="res://Resources/Img/Enemies/Jett.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://dwh7jxoq4yl5l" path="res://Resources/Img/Enemies/Neon.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://5sa44jio7252" path="res://Resources/Img/Enemies/Phoenix.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://bil3evcwtgwma" path="res://Resources/Img/Enemies/Raze.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://c4frcv5g6puxd" path="res://Resources/Img/Enemies/Reyna.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://dtvu5oi8e3a5g" path="res://Resources/Img/Enemies/Sova.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://cihu4ky8nd1g1" path="res://Resources/Img/Enemies/Sage.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://dafbslwjkklie" path="res://Resources/Img/Enemies/Skye.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://c3skhe05a2t5m" path="res://Resources/Img/Enemies/Killjoy.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://boxvmy8ejevk" path="res://Resources/Img/Characters/Agents.png" id="20"]
+[ext_resource type="Script" path="res://Scripts/AgentSelection.gd" id="21"]
+[ext_resource type="Texture2D" uid="uid://hyib88hr7sbw" path="res://Resources/Img/Hud/Select.png" id="22"]
+[ext_resource type="AudioStream" uid="uid://be52ieiymncvc" path="res://Resources/Audio/Misc/agentselect.mp3" id="23"]
 
 [node name="AgentSelection" type="Control"]
+layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 21 )
+script = ExtResource("21")
 
-[node name="Selection" type="Sprite" parent="."]
-position = Vector2( 513, 299 )
-scale = Vector2( 0.555208, 0.555208 )
-texture = ExtResource( 2 )
+[node name="Selection" type="Sprite2D" parent="."]
+position = Vector2(513, 299)
+scale = Vector2(0.555208, 0.555208)
+texture = ExtResource("2")
 
 [node name="Brimstone" type="TextureButton" parent="Selection"]
-margin_left = -420.127
-margin_top = 347.061
-margin_right = -340.127
-margin_bottom = 427.061
+offset_left = -420.0
+offset_top = 347.0
+offset_right = -339.0
+offset_bottom = 425.0
 action_mode = 0
 keep_pressed_outside = true
-texture_normal = ExtResource( 1 )
-expand = true
+texture_normal = ExtResource("1")
+ignore_texture_size = true
+stretch_mode = 4
 
 [node name="Jett" type="TextureButton" parent="Selection"]
-margin_left = -334.275
-margin_top = 345.235
-margin_right = -254.275
-margin_bottom = 425.235
+offset_left = -334.0
+offset_top = 345.0
+offset_right = -254.0
+offset_bottom = 427.0
 action_mode = 0
 keep_pressed_outside = true
-texture_normal = ExtResource( 11 )
-expand = true
+texture_normal = ExtResource("11")
+ignore_texture_size = true
+stretch_mode = 4
 
 [node name="Killjoy" type="TextureButton" parent="Selection"]
-margin_left = -250.25
-margin_top = 345.235
-margin_right = -170.25
-margin_bottom = 425.235
+offset_left = -250.25
+offset_top = 345.235
+offset_right = -170.25
+offset_bottom = 425.235
 action_mode = 0
 keep_pressed_outside = true
-texture_normal = ExtResource( 19 )
-expand = true
+texture_normal = ExtResource("19")
 
 [node name="Neon" type="TextureButton" parent="Selection"]
-margin_left = -166.224
-margin_top = 345.235
-margin_right = -86.2242
-margin_bottom = 425.235
+offset_left = -166.224
+offset_top = 345.235
+offset_right = -86.2242
+offset_bottom = 425.235
 action_mode = 0
 keep_pressed_outside = true
-texture_normal = ExtResource( 12 )
-expand = true
+texture_normal = ExtResource("12")
 
 [node name="Phoenix" type="TextureButton" parent="Selection"]
-margin_left = -82.1988
-margin_top = 345.235
-margin_right = -2.19879
-margin_bottom = 425.235
+offset_left = -82.1988
+offset_top = 345.235
+offset_right = -2.19879
+offset_bottom = 425.235
 action_mode = 0
 keep_pressed_outside = true
-texture_normal = ExtResource( 13 )
-expand = true
+texture_normal = ExtResource("13")
 
 [node name="Raze" type="TextureButton" parent="Selection"]
-margin_left = 1.82648
-margin_top = 345.235
-margin_right = 81.8265
-margin_bottom = 425.235
+offset_left = 1.82648
+offset_top = 345.235
+offset_right = 81.8265
+offset_bottom = 425.235
 action_mode = 0
 keep_pressed_outside = true
-texture_normal = ExtResource( 14 )
-expand = true
+texture_normal = ExtResource("14")
 
 [node name="Reyna" type="TextureButton" parent="Selection"]
-margin_left = 85.8519
-margin_top = 345.235
-margin_right = 165.852
-margin_bottom = 425.235
+offset_left = 85.8519
+offset_top = 345.235
+offset_right = 165.852
+offset_bottom = 425.235
 action_mode = 0
 keep_pressed_outside = true
-texture_normal = ExtResource( 15 )
-expand = true
+texture_normal = ExtResource("15")
 
 [node name="Sage" type="TextureButton" parent="Selection"]
-margin_left = 169.877
-margin_top = 345.235
-margin_right = 249.877
-margin_bottom = 425.235
+offset_left = 169.877
+offset_top = 345.235
+offset_right = 249.877
+offset_bottom = 425.235
 action_mode = 0
 keep_pressed_outside = true
-texture_normal = ExtResource( 17 )
-expand = true
+texture_normal = ExtResource("17")
 
 [node name="Skye" type="TextureButton" parent="Selection"]
-margin_left = 253.903
-margin_top = 345.235
-margin_right = 333.903
-margin_bottom = 425.235
+offset_left = 253.903
+offset_top = 345.235
+offset_right = 333.903
+offset_bottom = 425.235
 action_mode = 0
 keep_pressed_outside = true
-texture_normal = ExtResource( 18 )
-expand = true
+texture_normal = ExtResource("18")
 
 [node name="Sova" type="TextureButton" parent="Selection"]
-margin_left = 337.928
-margin_top = 345.235
-margin_right = 417.928
-margin_bottom = 425.235
+offset_left = 337.928
+offset_top = 345.235
+offset_right = 417.928
+offset_bottom = 425.235
 action_mode = 0
 keep_pressed_outside = true
-texture_normal = ExtResource( 16 )
-expand = true
+texture_normal = ExtResource("16")
 
 [node name="Viper" type="TextureButton" parent="Selection"]
-margin_left = -418.3
-margin_top = 429.26
-margin_right = -338.3
-margin_bottom = 509.26
+offset_left = -418.3
+offset_top = 429.26
+offset_right = -338.3
+offset_bottom = 509.26
 action_mode = 0
 keep_pressed_outside = true
-texture_normal = ExtResource( 8 )
-expand = true
+texture_normal = ExtResource("8")
 
 [node name="Astra" type="TextureButton" parent="Selection"]
-margin_left = -334.275
-margin_top = 429.26
-margin_right = -254.275
-margin_bottom = 509.26
+offset_left = -334.275
+offset_top = 429.26
+offset_right = -254.275
+offset_bottom = 509.26
 action_mode = 0
 keep_pressed_outside = true
-texture_normal = ExtResource( 7 )
-expand = true
+texture_normal = ExtResource("7")
 
 [node name="Breach" type="TextureButton" parent="Selection"]
-margin_left = -250.25
-margin_top = 429.26
-margin_right = -170.25
-margin_bottom = 509.26
+offset_left = -250.25
+offset_top = 429.26
+offset_right = -170.25
+offset_bottom = 509.26
 action_mode = 0
 keep_pressed_outside = true
-texture_normal = ExtResource( 3 )
-expand = true
+texture_normal = ExtResource("3")
 
 [node name="Chamber" type="TextureButton" parent="Selection"]
-margin_left = -166.224
-margin_top = 429.26
-margin_right = -86.2242
-margin_bottom = 509.26
+offset_left = -166.224
+offset_top = 429.26
+offset_right = -86.2242
+offset_bottom = 509.26
 action_mode = 0
 keep_pressed_outside = true
-texture_normal = ExtResource( 4 )
-expand = true
+texture_normal = ExtResource("4")
 
 [node name="Cypher" type="TextureButton" parent="Selection"]
-margin_left = -82.1988
-margin_top = 429.26
-margin_right = -2.19879
-margin_bottom = 509.26
+offset_left = -82.1988
+offset_top = 429.26
+offset_right = -2.19879
+offset_bottom = 509.26
 action_mode = 0
 keep_pressed_outside = true
-texture_normal = ExtResource( 10 )
-expand = true
+texture_normal = ExtResource("10")
 
 [node name="Kayo" type="TextureButton" parent="Selection"]
-margin_left = 85.8519
-margin_top = 429.26
-margin_right = 165.852
-margin_bottom = 509.26
+offset_left = 85.8519
+offset_top = 429.26
+offset_right = 165.852
+offset_bottom = 509.26
 action_mode = 0
 keep_pressed_outside = true
-texture_normal = ExtResource( 9 )
-expand = true
+texture_normal = ExtResource("9")
 
 [node name="Omen" type="TextureButton" parent="Selection"]
-margin_left = 169.877
-margin_top = 429.26
-margin_right = 249.877
-margin_bottom = 509.26
+offset_left = 169.877
+offset_top = 429.26
+offset_right = 249.877
+offset_bottom = 509.26
 action_mode = 0
 keep_pressed_outside = true
-texture_normal = ExtResource( 6 )
-expand = true
+texture_normal = ExtResource("6")
 
 [node name="Yoru" type="TextureButton" parent="Selection"]
-margin_left = 253.903
-margin_top = 429.26
-margin_right = 333.903
-margin_bottom = 509.26
+offset_left = 253.903
+offset_top = 429.26
+offset_right = 333.903
+offset_bottom = 509.26
 action_mode = 0
 keep_pressed_outside = true
-texture_normal = ExtResource( 5 )
-expand = true
+texture_normal = ExtResource("5")
 
 [node name="TextureButton" type="TextureButton" parent="Selection"]
+anchors_preset = -1
 anchor_left = 0.431641
 anchor_top = 0.726667
 anchor_right = 0.563477
 anchor_bottom = 0.786667
-margin_left = -947.482
-margin_top = -541.857
-margin_right = -947.482
-margin_bottom = -541.857
-texture_normal = ExtResource( 22 )
-expand = true
-__meta__ = {
-"_edit_use_anchors_": true
-}
+offset_left = -947.482
+offset_top = -541.857
+offset_right = -947.482
+offset_bottom = -541.857
+texture_normal = ExtResource("22")
 
-[node name="Agent" type="Sprite" parent="."]
+[node name="Agent" type="Sprite2D" parent="."]
 visible = false
-position = Vector2( 498, 216 )
-scale = Vector2( 2.43204, 2.43204 )
-texture = ExtResource( 20 )
+position = Vector2(498, 216)
+scale = Vector2(2.43204, 2.43204)
+texture = ExtResource("20")
 hframes = 6
 vframes = 3
 frame = 5
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 23 )
+stream = ExtResource("23")
 
 [connection signal="pressed" from="Selection/Brimstone" to="." method="_on_Brimstone_pressed"]
 [connection signal="pressed" from="Selection/Jett" to="." method="_on_Jett_pressed"]

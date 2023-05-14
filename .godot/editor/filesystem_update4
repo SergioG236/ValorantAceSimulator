@@ -1,0 +1,7 @@
+res://default_env.tres
+res://Scenes/Title.tscn
+res://Resources/Theme/Theme.tres
+res://Scenes/World.tscn
+res://Scenes/Menu.tscn
+res://Scenes/AgentSelection.tscn
+res://Scripts/Player.gd

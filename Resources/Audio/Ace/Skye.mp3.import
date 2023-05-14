@@ -2,14 +2,18 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/Skye.mp3-ab4fec96d5028e08c1fd537b42bd8475.mp3str"
+uid="uid://duairkxl2nyht"
+path="res://.godot/imported/Skye.mp3-ab4fec96d5028e08c1fd537b42bd8475.mp3str"
 
 [deps]
 
 source_file="res://Resources/Audio/Ace/Skye.mp3"
-dest_files=[ "res://.import/Skye.mp3-ab4fec96d5028e08c1fd537b42bd8475.mp3str" ]
+dest_files=["res://.godot/imported/Skye.mp3-ab4fec96d5028e08c1fd537b42bd8475.mp3str"]
 
 [params]
 
 loop=false
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

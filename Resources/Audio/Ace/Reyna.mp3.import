@@ -2,14 +2,18 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/Reyna.mp3-663680d62d5b89510aae590a18319afb.mp3str"
+uid="uid://dsnij8gxxesr0"
+path="res://.godot/imported/Reyna.mp3-663680d62d5b89510aae590a18319afb.mp3str"
 
 [deps]
 
 source_file="res://Resources/Audio/Ace/Reyna.mp3"
-dest_files=[ "res://.import/Reyna.mp3-663680d62d5b89510aae590a18319afb.mp3str" ]
+dest_files=["res://.godot/imported/Reyna.mp3-663680d62d5b89510aae590a18319afb.mp3str"]
 
 [params]
 
 loop=false
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

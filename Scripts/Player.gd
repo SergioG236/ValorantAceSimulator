@@ -1,11 +1,11 @@
-extends KinematicBody
+extends CharacterBody3D
 
 const MOVE_SPEED = 4
 const MOUSE_SENS = 0.5
 
-onready var animPlayer = $CanvasLayer/Control/Sprite/AnimationPlayer
-onready var animAce = $CanvasLayer/Ace/AnimationPlayer
-onready var raycast = $RayCast
+@onready var animPlayer = $CanvasLayer/Control/Sprite2D/AnimationPlayer
+@onready var animAce = $CanvasLayer/Ace/AnimationPlayer
+@onready var raycast = $RayCast3D
 
 var agent = 0
 var kills = 0
@@ -14,7 +14,7 @@ var mouseCap
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	mouseCap = true
-	yield(get_tree(), "idle_frame")
+#	await get_tree().idle_frame
 	get_tree().call_group("Enemies", "setPlayer", self)
 
 func _input(event):
@@ -74,7 +74,7 @@ func _physics_process(delta):
 		animAce.play("Ace")
 		kills = 0
 		
-		yield(get_tree().create_timer(2.0), "timeout")
+		await get_tree().create_timer(2.0).timeout
 		
 		match agent:
 				0:

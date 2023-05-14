@@ -2,14 +2,18 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/Chamber.mp3-efa779478c5b485302a1aa1a510526d2.mp3str"
+uid="uid://c6v343mteua10"
+path="res://.godot/imported/Chamber.mp3-efa779478c5b485302a1aa1a510526d2.mp3str"
 
 [deps]
 
 source_file="res://Resources/Audio/Ace/Chamber.mp3"
-dest_files=[ "res://.import/Chamber.mp3-efa779478c5b485302a1aa1a510526d2.mp3str" ]
+dest_files=["res://.godot/imported/Chamber.mp3-efa779478c5b485302a1aa1a510526d2.mp3str"]
 
 [params]
 
 loop=false
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

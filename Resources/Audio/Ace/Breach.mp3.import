@@ -2,14 +2,18 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/Breach.mp3-7f09f6c2fe72da44d417cb80b4ea1bcd.mp3str"
+uid="uid://lfm1jwybcyn6"
+path="res://.godot/imported/Breach.mp3-7f09f6c2fe72da44d417cb80b4ea1bcd.mp3str"
 
 [deps]
 
 source_file="res://Resources/Audio/Ace/Breach.mp3"
-dest_files=[ "res://.import/Breach.mp3-7f09f6c2fe72da44d417cb80b4ea1bcd.mp3str" ]
+dest_files=["res://.godot/imported/Breach.mp3-7f09f6c2fe72da44d417cb80b4ea1bcd.mp3str"]
 
 [params]
 
 loop=false
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

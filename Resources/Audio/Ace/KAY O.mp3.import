@@ -2,14 +2,18 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/KAY O.mp3-d1b95461a99f4b3195dda2fd996eb656.mp3str"
+uid="uid://4d8sc4oj8xul"
+path="res://.godot/imported/KAY O.mp3-d1b95461a99f4b3195dda2fd996eb656.mp3str"
 
 [deps]
 
 source_file="res://Resources/Audio/Ace/KAY O.mp3"
-dest_files=[ "res://.import/KAY O.mp3-d1b95461a99f4b3195dda2fd996eb656.mp3str" ]
+dest_files=["res://.godot/imported/KAY O.mp3-d1b95461a99f4b3195dda2fd996eb656.mp3str"]
 
 [params]
 
 loop=false
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

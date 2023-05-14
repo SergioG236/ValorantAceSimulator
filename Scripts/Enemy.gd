@@ -1,9 +1,9 @@
-extends KinematicBody
+extends CharacterBody3D
 
 var player = null
 var dead = false
 
-onready var raycast = $RayCast
+@onready var raycast = $RayCast3D
 
 func _ready():
 	add_to_group("Enemies")
@@ -24,5 +24,5 @@ func setPlayer(p):
 
 func kill():
 	dead = true
-	$CollisionShape.disabled = true
+	$CollisionShape3D.disabled = true
 	$Sprite3D.visible = false

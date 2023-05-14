@@ -2,14 +2,18 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/Jett.mp3-59de4d35252339d6d32c7e5657ee7d5e.mp3str"
+uid="uid://d2ewbahxnphnj"
+path="res://.godot/imported/Jett.mp3-59de4d35252339d6d32c7e5657ee7d5e.mp3str"
 
 [deps]
 
 source_file="res://Resources/Audio/Ace/Jett.mp3"
-dest_files=[ "res://.import/Jett.mp3-59de4d35252339d6d32c7e5657ee7d5e.mp3str" ]
+dest_files=["res://.godot/imported/Jett.mp3-59de4d35252339d6d32c7e5657ee7d5e.mp3str"]
 
 [params]
 
 loop=false
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

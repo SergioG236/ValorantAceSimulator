@@ -2,14 +2,18 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/segunda_kill.mp3-7f9c406504aea9968919b95e98e1cb47.mp3str"
+uid="uid://cur5xcgcvjceo"
+path="res://.godot/imported/segunda_kill.mp3-7f9c406504aea9968919b95e98e1cb47.mp3str"
 
 [deps]
 
 source_file="res://Resources/Audio/Kills/segunda_kill.mp3"
-dest_files=[ "res://.import/segunda_kill.mp3-7f9c406504aea9968919b95e98e1cb47.mp3str" ]
+dest_files=["res://.godot/imported/segunda_kill.mp3-7f9c406504aea9968919b95e98e1cb47.mp3str"]
 
 [params]
 
 loop=false
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

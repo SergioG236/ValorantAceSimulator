@@ -1,8 +1,8 @@
 [gd_scene load_steps=52 format=2]
 
-[ext_resource path="res://Resources/Img/Hud/Gun.png" type="Texture" id=1]
+[ext_resource path="res://Resources/Img/Hud/Gun.png" type="Texture2D" id=1]
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
-[ext_resource path="res://Resources/Img/Hud/ACE.png" type="Texture" id=3]
+[ext_resource path="res://Resources/Img/Hud/ACE.png" type="Texture2D" id=3]
 [ext_resource path="res://Resources/Audio/Kills/primera_kill.mp3" type="AudioStream" id=4]
 [ext_resource path="res://Resources/Audio/Kills/quinta_kill.mp3" type="AudioStream" id=5]
 [ext_resource path="res://Resources/Audio/Kills/segunda_kill.mp3" type="AudioStream" id=6]
@@ -28,49 +28,49 @@
 [ext_resource path="res://Resources/Audio/Ace/Breach.mp3" type="AudioStream" id=26]
 [ext_resource path="res://Resources/Audio/Ace/Cypher.mp3" type="AudioStream" id=27]
 [ext_resource path="res://Resources/Theme/Theme.tres" type="Theme" id=28]
-[ext_resource path="res://Resources/Img/Kill/primera_kill.png" type="Texture" id=29]
-[ext_resource path="res://Resources/Img/Kill/cuarta_kill.png" type="Texture" id=30]
-[ext_resource path="res://Resources/Img/Kill/quinta_kill.png" type="Texture" id=31]
-[ext_resource path="res://Resources/Img/Kill/segunda_kill.png" type="Texture" id=32]
-[ext_resource path="res://Resources/Img/Kill/tercera_kill.png" type="Texture" id=33]
+[ext_resource path="res://Resources/Img/Kill/primera_kill.png" type="Texture2D" id=29]
+[ext_resource path="res://Resources/Img/Kill/cuarta_kill.png" type="Texture2D" id=30]
+[ext_resource path="res://Resources/Img/Kill/quinta_kill.png" type="Texture2D" id=31]
+[ext_resource path="res://Resources/Img/Kill/segunda_kill.png" type="Texture2D" id=32]
+[ext_resource path="res://Resources/Img/Kill/tercera_kill.png" type="Texture2D" id=33]
 
-[sub_resource type="CapsuleShape" id=1]
+[sub_resource type="CapsuleShape3D" id=1]
 
 [sub_resource type="Animation" id=2]
 length = 0.001
 tracks/0/type = "value"
-tracks/0/path = NodePath("CanvasLayer/Control/Sprite:position")
+tracks/0/path = NodePath("CanvasLayer/Control/Sprite2D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Vector2( 315, -163 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("CanvasLayer/Control/Sprite:rotation_degrees")
+tracks/1/path = NodePath("CanvasLayer/Control/Sprite2D:rotation_degrees")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ 0.0 ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("CanvasLayer/Control/Sprite:frame")
+tracks/2/path = NodePath("CanvasLayer/Control/Sprite2D:frame")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ 0 ]
 }
@@ -79,14 +79,14 @@ tracks/2/keys = {
 resource_name = "Shoot"
 length = 0.2
 tracks/0/type = "value"
-tracks/0/path = NodePath("CanvasLayer/Control/Sprite:frame")
+tracks/0/path = NodePath("CanvasLayer/Control/Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.2 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ 1, 0 ]
 }
@@ -104,8 +104,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ) ]
 }
@@ -119,8 +119,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 1 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.92549 ) ]
 }
@@ -135,8 +135,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
@@ -150,8 +150,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ) ]
 }
@@ -166,8 +166,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.4, 2.5 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.4, 2.5 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
@@ -178,8 +178,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.4, 2.5 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.4, 2.5 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 512, 512 ), Vector2( 512, 456 ), Vector2( 512, 512 ) ]
 }
@@ -193,8 +193,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ) ]
 }
@@ -205,8 +205,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Vector2( 512, 512 ) ]
 }
@@ -221,8 +221,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.4, 2.5 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.4, 2.5 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
@@ -233,8 +233,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.4, 2.5 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.4, 2.5 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 512, 512 ), Vector2( 512, 456 ), Vector2( 512, 512 ) ]
 }
@@ -248,8 +248,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ) ]
 }
@@ -260,8 +260,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Vector2( 512, 512 ) ]
 }
@@ -276,8 +276,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.4, 2.5 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.4, 2.5 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
@@ -288,8 +288,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.4, 2.5 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.4, 2.5 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 512, 512 ), Vector2( 512, 456 ), Vector2( 512, 512 ) ]
 }
@@ -303,8 +303,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ) ]
 }
@@ -315,8 +315,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Vector2( 512, 512 ) ]
 }
@@ -331,8 +331,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.4, 2.5 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.4, 2.5 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
@@ -343,8 +343,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.4, 2.5 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.4, 2.5 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 512, 512 ), Vector2( 512, 456 ), Vector2( 512, 512 ) ]
 }
@@ -358,8 +358,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ) ]
 }
@@ -370,8 +370,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Vector2( 512, 512 ) ]
 }
@@ -386,8 +386,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
@@ -398,8 +398,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 512, 512 ), Vector2( 512, 456 ) ]
 }
@@ -413,8 +413,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ) ]
 }
@@ -425,24 +425,24 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Vector2( 512, 512 ) ]
 }
 
-[node name="Player" type="KinematicBody"]
+[node name="Player" type="CharacterBody3D"]
 script = ExtResource( 2 )
 
-[node name="Collision" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
+[node name="Collision" type="CollisionShape3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
 shape = SubResource( 1 )
 
-[node name="RayCast" type="RayCast" parent="."]
+[node name="RayCast3D" type="RayCast3D" parent="."]
 enabled = true
-cast_to = Vector3( 0, 0, -2000 )
+target_position = Vector3( 0, 0, -2000 )
 
-[node name="Camera" type="Camera" parent="."]
+[node name="Camera3D" type="Camera3D" parent="."]
 current = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -453,13 +453,13 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 
-[node name="Sprite" type="Sprite" parent="CanvasLayer/Control"]
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Control"]
 position = Vector2( 315, -163 )
 scale = Vector2( 10.2188, 10.2188 )
 texture = ExtResource( 1 )
 hframes = 3
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/Control/Sprite"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/Control/Sprite2D"]
 root_node = NodePath("../../../..")
 anims/RESET = SubResource( 2 )
 anims/Shoot = SubResource( 3 )
@@ -469,9 +469,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -32.0
-margin_top = -32.0
-rect_scale = Vector2( 2, 2 )
+offset_left = -32.0
+offset_top = -32.0
+scale = Vector2( 2, 2 )
 texture = SubResource( 4 )
 
 [node name="Menu" parent="CanvasLayer" instance=ExtResource( 9 )]
@@ -479,10 +479,10 @@ visible = false
 
 [node name="Replay" type="Label" parent="CanvasLayer"]
 self_modulate = Color( 1, 1, 1, 0 )
-margin_left = 184.0
-margin_top = 352.0
-margin_right = 839.0
-margin_bottom = 412.0
+offset_left = 184.0
+offset_top = 352.0
+offset_right = 839.0
+offset_bottom = 412.0
 theme = ExtResource( 28 )
 text = "Press ESC to Open the menu"
 
@@ -490,7 +490,7 @@ text = "Press ESC to Open the menu"
 anims/RESET = SubResource( 7 )
 anims/Replay = SubResource( 8 )
 
-[node name="Ace" type="Sprite" parent="CanvasLayer"]
+[node name="Ace" type="Sprite2D" parent="CanvasLayer"]
 self_modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 512, 120 )
 scale = Vector2( 0.771654, 0.771654 )
@@ -500,7 +500,7 @@ texture = ExtResource( 3 )
 anims/Ace = SubResource( 5 )
 anims/RESET = SubResource( 6 )
 
-[node name="First" type="Sprite" parent="CanvasLayer"]
+[node name="First" type="Sprite2D" parent="CanvasLayer"]
 self_modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 512, 512 )
 scale = Vector2( 0.188235, 0.188235 )
@@ -510,7 +510,7 @@ texture = ExtResource( 29 )
 anims/Kill = SubResource( 9 )
 anims/RESET = SubResource( 10 )
 
-[node name="Second" type="Sprite" parent="CanvasLayer"]
+[node name="Second" type="Sprite2D" parent="CanvasLayer"]
 self_modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 512, 512 )
 scale = Vector2( 0.188235, 0.188235 )
@@ -520,7 +520,7 @@ texture = ExtResource( 32 )
 anims/Kill = SubResource( 11 )
 anims/RESET = SubResource( 12 )
 
-[node name="Third" type="Sprite" parent="CanvasLayer"]
+[node name="Third" type="Sprite2D" parent="CanvasLayer"]
 self_modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 512, 512 )
 scale = Vector2( 0.188235, 0.188235 )
@@ -530,7 +530,7 @@ texture = ExtResource( 33 )
 anims/Kill = SubResource( 13 )
 anims/RESET = SubResource( 14 )
 
-[node name="Fourth" type="Sprite" parent="CanvasLayer"]
+[node name="Fourth" type="Sprite2D" parent="CanvasLayer"]
 self_modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 512, 512 )
 scale = Vector2( 0.188235, 0.188235 )
@@ -540,7 +540,7 @@ texture = ExtResource( 30 )
 anims/Kill = SubResource( 15 )
 anims/RESET = SubResource( 16 )
 
-[node name="Fifth" type="Sprite" parent="CanvasLayer"]
+[node name="Fifth" type="Sprite2D" parent="CanvasLayer"]
 self_modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 512, 512 )
 scale = Vector2( 0.188235, 0.188235 )

@@ -2,14 +2,18 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/primera_kill.mp3-bbd650d5bab54974da6be72d6ba95020.mp3str"
+uid="uid://bpenb6amg1alg"
+path="res://.godot/imported/primera_kill.mp3-bbd650d5bab54974da6be72d6ba95020.mp3str"
 
 [deps]
 
 source_file="res://Resources/Audio/Kills/primera_kill.mp3"
-dest_files=[ "res://.import/primera_kill.mp3-bbd650d5bab54974da6be72d6ba95020.mp3str" ]
+dest_files=["res://.godot/imported/primera_kill.mp3-bbd650d5bab54974da6be72d6ba95020.mp3str"]
 
 [params]
 
 loop=false
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

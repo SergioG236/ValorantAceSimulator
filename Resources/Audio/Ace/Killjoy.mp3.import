@@ -2,14 +2,18 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/Killjoy.mp3-2de58ebf4ff0daec5160c731d52acccf.mp3str"
+uid="uid://d3yt1cmg7aqys"
+path="res://.godot/imported/Killjoy.mp3-2de58ebf4ff0daec5160c731d52acccf.mp3str"
 
 [deps]
 
 source_file="res://Resources/Audio/Ace/Killjoy.mp3"
-dest_files=[ "res://.import/Killjoy.mp3-2de58ebf4ff0daec5160c731d52acccf.mp3str" ]
+dest_files=["res://.godot/imported/Killjoy.mp3-2de58ebf4ff0daec5160c731d52acccf.mp3str"]
 
 [params]
 
 loop=false
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

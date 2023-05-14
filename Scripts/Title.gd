@@ -7,7 +7,7 @@ func _ready():
 
 func _on_Start_pressed():
 	$AudioStreamPlayer.stop()
-	get_tree().change_scene("res://Scenes/AgentSelection.tscn")
+	get_tree().change_scene_to_file("res://Scenes/AgentSelection.tscn")
 
 func _on_Settings_pressed():
 	$Settings.visible = true

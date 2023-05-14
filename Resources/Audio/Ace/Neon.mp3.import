@@ -2,14 +2,18 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/Neon.mp3-adee46c2d5094dc9be9f377227f12d0c.mp3str"
+uid="uid://qx0ie17mamg2"
+path="res://.godot/imported/Neon.mp3-adee46c2d5094dc9be9f377227f12d0c.mp3str"
 
 [deps]
 
 source_file="res://Resources/Audio/Ace/Neon.mp3"
-dest_files=[ "res://.import/Neon.mp3-adee46c2d5094dc9be9f377227f12d0c.mp3str" ]
+dest_files=["res://.godot/imported/Neon.mp3-adee46c2d5094dc9be9f377227f12d0c.mp3str"]
 
 [params]
 
 loop=false
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

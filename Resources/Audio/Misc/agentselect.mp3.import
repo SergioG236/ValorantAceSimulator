@@ -2,14 +2,18 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/agentselect.mp3-ca8cb6d10a14cb98445e1d9ce6ccc902.mp3str"
+uid="uid://be52ieiymncvc"
+path="res://.godot/imported/agentselect.mp3-ca8cb6d10a14cb98445e1d9ce6ccc902.mp3str"
 
 [deps]
 
 source_file="res://Resources/Audio/Misc/agentselect.mp3"
-dest_files=[ "res://.import/agentselect.mp3-ca8cb6d10a14cb98445e1d9ce6ccc902.mp3str" ]
+dest_files=["res://.godot/imported/agentselect.mp3-ca8cb6d10a14cb98445e1d9ce6ccc902.mp3str"]
 
 [params]
 
 loop=true
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

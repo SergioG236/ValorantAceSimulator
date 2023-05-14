@@ -1,80 +1,95 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=7 format=3 uid="uid://p10jlkvyf6u1"]
 
-[ext_resource path="res://Resources/Fonts/Welbut__.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Scenes/Settings.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Resources/Theme/Theme.tres" type="Theme" id=3]
-[ext_resource path="res://Scripts/Menu.gd" type="Script" id=4]
+[ext_resource type="FontFile" uid="uid://bkg8488nydyes" path="res://Resources/Fonts/Welbut__.ttf" id="1"]
+[ext_resource type="PackedScene" path="res://Scenes/Settings.tscn" id="2"]
+[ext_resource type="Theme" uid="uid://b2xgjlto21f6b" path="res://Resources/Theme/Theme.tres" id="3"]
+[ext_resource type="Script" path="res://Scripts/Menu.gd" id="4"]
 
-[sub_resource type="DynamicFont" id=1]
-font_data = ExtResource( 1 )
+[sub_resource type="FontFile" id="1"]
+fallbacks = Array[Font]([ExtResource("1")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
-[sub_resource type="DynamicFont" id=2]
-size = 27
-font_data = ExtResource( 1 )
+[sub_resource type="FontFile" id="2"]
+fallbacks = Array[Font]([ExtResource("1")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
 [node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-theme = ExtResource( 3 )
-script = ExtResource( 4 )
+theme = ExtResource("3")
+script = ExtResource("4")
 
 [node name="Options" type="ColorRect" parent="."]
+layout_mode = 0
 anchor_left = 0.420898
 anchor_top = 0.321667
 anchor_right = 0.580078
 anchor_bottom = 0.54
-color = Color( 0.192157, 0.192157, 0.192157, 1 )
-__meta__ = {
-"_edit_use_anchors_": true
-}
+color = Color(0.192157, 0.192157, 0.192157, 1)
 
 [node name="Continue" type="Button" parent="Options"]
-margin_left = 1.0
-margin_top = 38.0
-margin_right = 164.0
-margin_bottom = 69.0
-custom_fonts/font = SubResource( 1 )
+layout_mode = 0
+offset_left = 1.0
+offset_top = 38.0
+offset_right = 164.0
+offset_bottom = 69.0
+theme_override_fonts/font = SubResource("1")
 text = "Continue"
 
 [node name="Settings" type="Button" parent="Options"]
-margin_left = 1.5
-margin_top = 69.0
-margin_right = 164.5
-margin_bottom = 100.0
-custom_fonts/font = SubResource( 1 )
+layout_mode = 0
+offset_left = 1.5
+offset_top = 69.0
+offset_right = 164.5
+offset_bottom = 100.0
+theme_override_fonts/font = SubResource("1")
 text = "Settings"
 
 [node name="Exit" type="Button" parent="Options"]
-margin_left = 1.5
-margin_top = 100.0
-margin_right = 164.5
-margin_bottom = 131.0
-custom_fonts/font = SubResource( 1 )
+layout_mode = 0
+offset_left = 1.5
+offset_top = 100.0
+offset_right = 164.5
+offset_bottom = 131.0
+theme_override_fonts/font = SubResource("1")
 text = "Exit to Title"
 
 [node name="Title" type="ColorRect" parent="."]
+layout_mode = 0
 anchor_left = 0.420898
 anchor_top = 0.321667
 anchor_right = 0.580078
 anchor_bottom = 0.385
-color = Color( 0.152941, 0.152941, 0.152941, 1 )
-__meta__ = {
-"_edit_use_anchors_": true
-}
+color = Color(0.152941, 0.152941, 0.152941, 1)
 
 [node name="Label" type="Label" parent="Title"]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_fonts/font = SubResource( 2 )
+theme_override_fonts/font = SubResource("2")
 text = "Menu"
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": true
-}
 
-[node name="Settings" parent="." instance=ExtResource( 2 )]
+[node name="Settings" parent="." instance=ExtResource("2")]
 visible = false
+anchors_preset = 0
 
 [connection signal="pressed" from="Options/Continue" to="." method="_on_Continue_pressed"]
 [connection signal="pressed" from="Options/Settings" to="." method="_on_Settings_pressed"]

@@ -2,14 +2,18 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/Sova.mp3-a1d26ced5963024d29f2d613cd7d4be8.mp3str"
+uid="uid://cycrpq5pg487u"
+path="res://.godot/imported/Sova.mp3-a1d26ced5963024d29f2d613cd7d4be8.mp3str"
 
 [deps]
 
 source_file="res://Resources/Audio/Ace/Sova.mp3"
-dest_files=[ "res://.import/Sova.mp3-a1d26ced5963024d29f2d613cd7d4be8.mp3str" ]
+dest_files=["res://.godot/imported/Sova.mp3-a1d26ced5963024d29f2d613cd7d4be8.mp3str"]
 
 [params]
 
 loop=false
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

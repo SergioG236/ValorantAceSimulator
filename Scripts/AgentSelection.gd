@@ -1,6 +1,6 @@
 extends Control
 
-onready var agent = $Agent
+@onready var agent = $Agent
 
 func _ready():
 	$AudioStreamPlayer.play()
@@ -80,4 +80,4 @@ func _on_Yoru_pressed():
 func _on_TextureButton_pressed():
 	if agent.visible == true:
 		Global.agent = agent.frame
-		get_tree().change_scene("res://Scenes/World.tscn")
+		get_tree().change_scene_to_file("res://Scenes/World.tscn")
